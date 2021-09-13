@@ -87,8 +87,7 @@ def loadTables(method='bulk', tableNames=None, numBatches=56):
         valError('method must be temp, view or bulk')
             
     if not tableNames:
-        tableNames = ['tab02', 'tab01','tab03','tab04','tab05','tab07','tab06',
-                      'tab08','tab09','tab11','tab10','tab12']
+        tableNames = [f'tab{str(x).zfill(2)}' for x in range(1, 13)]
 
     logger.info(f"Loading tables with method '{method}': {', '.join(tableNames)}")
 
