@@ -1,0 +1,16 @@
+
+# Config file for pypostgres
+
+database:
+    # If no driver, put 'null' for value
+    windows_driver: <win_driver>
+    mac_driver: <mac_driver>
+    host: <hostname>
+    port: <port>
+    database_name: <database_name>
+
+logging:
+    # Example windows directory: 'S:\\UserTemp\\'
+    windows_log_directory: <window_log_dir>
+    mac_log_directory: <mac_log_dir>
+	
